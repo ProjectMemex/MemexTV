@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch - MemexTV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" style="color:#ff4d4d;text-decoration:none;">MemexTV</a></h1>
+  </header>
+
+  <section class="hero">
+    <h2 id="video-title">Now Playing</h2>
+  </section>
+
+  <section class="catalog" style="text-align: center;">
+    <video id="video-player" width="720" controls>
+      <source id="video-source" src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const videoId = params.get('video');
+    const videos = {
+      "sherlock": {
+        title: "Sherlock Holmes (1946)",
+        src: "https://archive.org/download/SherlockHolmesDressedToKill1946/SherlockHolmesDressedToKill1946_512kb.mp4"
+      },
+      "metropolis": {
+        title: "Metropolis (1927)",
+        src: "https://archive.org/download/Metropolis1927/Metropolis1927_512kb.mp4"
+      }
+    };
+
+    const video = videos[videoId];
+    if (video) {
+      document.getElementById("video-title").innerText = video.title;
+      document.getElementById("video-source").src = video.src;
+      document.getElementById("video-player").load();
+    }
+  </script>
+</body>
+</html>
