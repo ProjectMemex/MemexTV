@@ -3,52 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MemexTV - Public Domain Streaming</title>
+  <title>MemexTV - Watch Free Movies</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="scripts.js"></script>
 </head>
 <body>
   <header>
     <h1>MemexTV</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#catalog">Catalog</a>
+      <a href="index.html">Home</a>
+      <a href="catalog.html">Catalog</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <h2>Stream Public Domain Classics, Anime, and Regional Gems</h2>
-    <p>Free content with no logins required. Built for simplicity and access.</p>
+    <h2>Featured Classics</h2>
+    <p>No logins, no fuss. Just free films and cartoons.</p>
   </section>
 
-  <!-- Featured Movies Section (Home) -->
   <section class="catalog">
-    <h2>Featured Movies</h2>
     <div class="movie-grid">
-      <div class="movie-card">
-        <img src="https://archive.org/download/SherlockHolmesDressedToKill1946/SherlockHolmes1946.jpg" alt="Sherlock Holmes">
-        <h3>Sherlock Holmes (1946)</h3>
-        <a href="watch.html?video=sherlock" class="watch-btn">Watch Now</a>
-      </div>
-    </div>
-
-    <!-- View Full Catalog Button -->
-    <div style="text-align:center; margin-top:2rem;">
-      <a href="#catalog" class="watch-btn">View Full Catalog</a>
-    </div>
-  </section>
-
-  <!-- Full Catalog Section -->
-  <section id="catalog" class="catalog">
-    <h2>Full Catalog</h2>
-    <div class="movie-grid">
-      <div class="movie-card">
+      <div class="movie-card" data-tags="metropolis,german,fritz lang" data-category="Classic">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Metropolisposter_restoration.jpg/480px-Metropolisposter_restoration.jpg" alt="Metropolis">
         <h3>Metropolis (1927)</h3>
         <a href="watch.html?video=metropolis" class="watch-btn">Watch Now</a>
       </div>
 
-      <!-- Add more movies here -->
+      <div class="movie-card" data-tags="oswald,rabbit,1920s,cartoon" data-category="Cartoon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Trolley_Troubles.jpg/480px-Trolley_Troubles.jpg" alt="Oswald">
+        <h3>Oswald the Lucky Rabbit</h3>
+        <a href="tvshow.html?show=oswald" class="watch-btn">View Episodes</a>
+      </div>
+
+      <div class="movie-card" data-tags="night,living,dead" data-category="Horror,Classic,Zombie">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Night_of_the_Living_Dead_%281968%29.jpg/480px-Night_of_the_Living_Dead_%281968%29.jpg" alt="Night of the Living Dead">
+        <h3>Night of the Living Dead</h3>
+        <a href="watch.html?video=nightdead" class="watch-btn">Watch Now</a>
+      </div>
+
+      <div class="movie-card" data-tags="superman,cartoon,1940s" data-category="Cartoon">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/74/Superman_Mad_Scientist.jpg" alt="Superman">
+        <h3>Superman Series</h3>
+        <a href="tvshow.html?show=superman" class="watch-btn">View Episodes</a>
+      </div>
+
+      <div class="movie-card" data-tags="dracula,vampire,horror" data-category="Classic,Horror">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Dracula_1931_poster.jpg/480px-Dracula_1931_poster.jpg" alt="Dracula">
+        <h3>Dracula (1931)</h3>
+        <a href="watch.html?video=dracula" class="watch-btn">Watch Now</a>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="catalog.html" class="watch-btn">Browse Full Catalog</a>
     </div>
   </section>
 
