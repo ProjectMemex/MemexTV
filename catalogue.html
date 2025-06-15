@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemexTV Catalog</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <h1>MemexTV</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <section class="catalog">
+    <input type="text" id="search" placeholder="Search..." />
+    <select id="category-filter">
+      <option value="all">All Categories</option>
+      <option value="Cartoon">Cartoon</option>
+      <option value="Classic">Classic</option>
+      <option value="Horror">Horror</option>
+      <option value="Romance">Romance</option>
+      <option value="Comedy">Comedy</option>
+      <option value="Sci-fi">Sci-fi</option>
+      <option value="Zombie">Zombie</option>
+      <option value="Musical">Musical</option>
+      <option value="Anime">Anime</option>
+      <option value="Western">Western</option>
+      <option value="Mystery">Mystery</option>
+      <option value="Christmas">Christmas</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Historical">Historical</option>
+    </select>
+
+    <div class="movie-grid" id="catalog-grid">
+      <!-- JS will insert all 35 entries here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MemexTV</p>
+  </footer>
+</body>
+</html>
